@@ -40,6 +40,15 @@ docker run -it --net=host
 ```
 rosservice call /dynamixel_workbench_base/dynamixel_controllers/dynamixel_command "Torque : True"
 ```
+6. After running catkin_make and sourcing the ros workspace, Run
+```
+rosrun stereo_vision stereo.py
+```
+```
+rosrun stereo_vision subscriber.py
+```
+
+This will start the Face attention model, for more information about the Stereo vision Depth calculation, topics and services computed refer the original documentation in [Architecture Repo](https://github.com/MAYA-1-0/MAYA1.0_Architecture)
 
 
 
