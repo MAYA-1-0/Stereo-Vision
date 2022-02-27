@@ -30,3 +30,17 @@ docker pull mayakle/maya_head:latest
 ```
 git clone https://github.com/opencv/opencv.git
 ```
+
+4. run the docker, (detailed explanation about this can be found in [kinematics Repository readme](https://github.com/MAYA-1-0/KInematics_And_Odometry/blob/main/README.md)
+```
+docker run -it --net=host 
+```
+
+5. Switch on Torque of the dynamixel motors,
+```
+rosservice call /dynamixel_workbench_base/dynamixel_controllers/dynamixel_command "Torque : True"
+```
+
+
+
+
